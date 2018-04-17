@@ -10,6 +10,6 @@ public class CVlianRunner {
 
     public static void main(String[] args) {
         CVlian app = new CVlian("src/main/resources/haarcascades/haarcascade_frontalface_default.xml");
-        app.run("/home/alexey/sandbox/src/");
+        app.run("<source images>");
     }
 }

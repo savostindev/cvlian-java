@@ -51,7 +51,8 @@ public class CVlian {
                 angle = 0.0;
             }
         } else {
-            //TODO make gender classification
+            System.out.println("Лицо обнаружено");
+            //TODO gender classification
         }
     }
 
@@ -64,7 +65,7 @@ public class CVlian {
             h = ((image.height()-frameSize*2-rect.height)<rect.y) ? (image.height() - y) : (rect.height + frameSize*2);
             Rect adjustedFrame = new Rect(x, y, w, h);
             Mat adjustedImage = image.submat(adjustedFrame);
-            Imgcodecs.imwrite("/home/alexey/sandbox/dst/" + Math.random() + ".jpg", adjustedImage);
+            Imgcodecs.imwrite("<folder_name>" + Math.random() + ".jpg", adjustedImage);
             System.out.println("Лицо обнаружено на " + "file.getName()");
         }
     }
